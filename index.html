@@ -13,72 +13,74 @@
       rel="stylesheet"
     />
 
-    <title>homework-2</title>
+    <title>studia</title>
   </head>
   <body>
     <!--Шапка та навігація-->
     <header class="header">
-      <nav>
-        <a class="logo" href="index.html">
+      <nav class="header-nav">
+        <a class="header-logo" href="index.html">
           <span class="web">Web</span>Studio
         </a>
         <ul>
           <li>
-            <a href="./index.html" class="studia curent navig accent">Студія</a>
+            <a href="./index.html" class="header-list studia curent accent"
+              >Студія</a
+            >
           </li>
           <li>
-            <a href="./portfolio.html" class="portfolio navig accent"
+            <a href="./portfolio.html" class="header-list portfolio accent"
               >Портфоліо</a
             >
           </li>
-          <li><a href="#1" class="contacts navig accent">Контакти</a></li>
+          <li><a href="#1" class="header-list contacts accent">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="communication">
+      <ul class="header-communication">
         <li>
-          <a class="mail info-act accent" href="mailto:info@devstudio.com"
+          <a class="mail header-link accent" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="phone info-act accent" href="tel:+380961111111"
+          <a class="phone header-link accent" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
     </header>
     <main>
-      <section class="your-bussines">
-        <h1 class="titl">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="servis">Замовити послугу</button>
+      <section class="section-bussines">
+        <h1 class="bussines-title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="bussines-button">Замовити послугу</button>
       </section>
       <section class="section-features">
         <h2 class="visually-hidden">Переваги</h2>
         <!-- прихований заголовок -->
-        <ul class="features">
-          <li class="atention-detail">
-            <h3 class="titl-features">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="par-features">
+        <ul class="features-list">
+          <li class="features-list-item attention">
+            <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="features-paragraph">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="punctuality">
-            <h3 class="titl-features">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="par-features">
+          <li class="features-list-item punctuality">
+            <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="features-paragraph">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="planning">
-            <h3 class="titl-features">ПЛАНУВАННЯ</h3>
-            <p class="par-features">
+          <li class="features-list-item planning">
+            <h3 class="features-title">ПЛАНУВАННЯ</h3>
+            <p class="features-paragraph">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="technology">
-            <h3 class="titl-features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="par-features">
+          <li class="features-list-item technology">
+            <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="features-paragraph">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -86,7 +88,7 @@
         </ul>
       </section>
       <section class="section-work">
-        <h2 class="titles">Чим ми займаємося</h2>
+        <h2 class="work-title titles">Чим ми займаємося</h2>
         <ul>
           <li>
             <img
@@ -111,59 +113,59 @@
         </ul>
       </section>
       <section class="section-commands">
-        <h2 class="titles">Наша команда</h2>
-        <ul>
-          <li class="designer color-block-comands">
+        <h2 class="commands-title titles">Наша команда</h2>
+        <ul class="commands-list">
+          <li class="commands-list-item designer">
             <img
               src="images/main_page/product_designer.jpg"
               alt="Product Designer"
               width="270"
               height="260"
             />
-            <h3 class="name-comands">Ігор Дем'яненко</h3>
-            <p class="work-name">Product Designer</p>
+            <h3 class="commands-name">Ігор Дем'яненко</h3>
+            <p class="commands-work">Product Designer</p>
           </li>
 
-          <li class="developer color-block-comands">
+          <li class="commands-list-item developer">
             <img
               src="images/main_page/frontend_developer.jpg"
               alt="Frontend Developer"
               width="270"
               height="260"
             />
-            <h3 class="name-comands">Ольга Рєпіна</h3>
-            <p class="work-name">Frontend Developer</p>
+            <h3 class="commands-name">Ольга Рєпіна</h3>
+            <p class="commands-work">Frontend Developer</p>
           </li>
-          <li class="marketing color-block-comands">
+          <li class="commands-list-item marketing">
             <img
               src="images/main_page/marketing.jpg"
               alt="Marketing"
               width="270"
               height="260"
             />
-            <h3 class="name-comands">Микола Тарасов</h3>
-            <p class="work-name">Marketing</p>
+            <h3 class="commands-name">Микола Тарасов</h3>
+            <p class="commands-work">Marketing</p>
           </li>
-          <li class="ui-designer color-block-comands">
+          <li class="commands-list-item ui-designer">
             <img
               src="images/main_page/ui_designer.jpg"
               alt="UI Designer"
               width="270"
               height="260"
             />
-            <h3 class="name-comands">Михайло Єрмаков</h3>
-            <p class="work-name">UI Designer</p>
+            <h3 class="commands-name">Михайло Єрмаков</h3>
+            <p class="commands-work">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a class="logof" href="index.html">
+      <a class="footer-logo" href="index.html">
         <span class="web">Web</span>Studio
       </a>
       <address id="1">
-        <ul class="inform">
-          <li>
+        <ul class="footer-list">
+          <li class="footer-list-item">
             <a
               class="address accent"
               target="_blank"
@@ -172,13 +174,17 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li class="number">
-            <a class="mailto accent" href="mailto:info@devstudio.com"
+          <li class="footer-list-item number">
+            <a
+              class="footer-link mailto accent"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="tel accent" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer-link tel accent" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>

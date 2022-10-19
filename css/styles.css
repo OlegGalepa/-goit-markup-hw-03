@@ -13,10 +13,7 @@
 /* Загальні стилі для сторінки */
 body {
     font-family: 'Roboto' , sans-serif ;
-    background-color: var(--bg-header-color);
     font-size: 14px;
-}
-.header {
     background-color: var(--bg-header-color);
 }
 .accent:hover, .accent:focus {
@@ -26,8 +23,11 @@ a, ul {
     list-style-type: none;
     text-decoration: none;
 }
-/* логотип */
-.logo {
+/* header */
+.header {
+    background-color: var(--bg-header-color);
+}
+.header-logo {
     font-family: 'Raleway'; 
     line-height: 1.19;
     font-weight: 700;
@@ -41,7 +41,7 @@ a, ul {
 .portfolio {
     accent-color: var(--accent-color);
 }
-.navig {
+.header-list {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -51,19 +51,18 @@ a, ul {
     color: var(--accent-color)
 }
 /* телефон та мейл */
-.info-act {
+.header-link {
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--o-nas-color);
 }
-/* Секція 1 інтерактивна  */
+/* Секція section-bussines */
 
- .your-bussines {
+ .section-bussines {
     background: var(--bg-screan-footer-color);
 }
-/* заголовок секції 1 */
-.titl {
+.bussines-title {
     color: var(--text-section-footer-color);
     font-weight: 900;
     font-size: 44px;
@@ -73,7 +72,7 @@ a, ul {
     text-transform: uppercase;
 }
 /* кнопка */
-.servis {
+.bussines-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -107,25 +106,25 @@ a, ul {
     clip-path: inset(50%);
     margin: -1px;
 }
-/* секція 2 */
- .titl-features {
+/* секція section-features */
+ .features-title {
      font-weight: 700;
      line-height: 1.14;
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: var(--title-text-color)
  }
- .par-features {
+ .features-paragraph {
      line-height: 1.71;
      letter-spacing: 0.03em;
      color: var(--o-nas-color);
  }
- /* Наша команда */
+ /* Section-commands */
  .section-commands {
      background-color: var(--comands-color);
  }
 
- .name-comands {
+ .commands-name {
      font-weight: 500;
      font-size: 16px;
      line-height: 1.18;
@@ -133,14 +132,14 @@ a, ul {
      letter-spacing: 0.03em;
      color: var(--title-text-color)
  }
- .work-name {
+ .commands-work {
      font-size: 16px;
      line-height: 1.18;
      text-align: center;
      letter-spacing: 0.03em;
      color: var(--o-nas-color)
  }
-.color-block-comands {
+.commands-list-item {
     background-color: var(--bg-header-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -150,7 +149,7 @@ a, ul {
      background: var(--bg-screan-footer-color);
  }
 /* лого підвал */
-.logof {
+.footer-logo {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -178,7 +177,7 @@ a, ul {
  }
 
 /* Кнопки в портфоліо */
-.but {
+.carts-button {
     background-color: var(--comands-color);
     border-radius: 4px;
     border: none;
@@ -189,8 +188,8 @@ a, ul {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.but:hover,
-.but:focus {
+.carts-button:hover,
+.carts-button:focus {
     background-color: var(--focus-color);
     color: var(--bg-header-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -204,7 +203,7 @@ a, ul {
      color: var(--title-text-color);
  }
 
- .parag-cards {
+ .cards-paragraph {
      font-size: 16px;
      line-height: 1.88;
      letter-spacing: 0.03em;
@@ -215,7 +214,3 @@ a, ul {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
  }
-  /* підвал портфоліо */
-.footerport {
-      background: var(--bg-screan-footer-color);
-  }
