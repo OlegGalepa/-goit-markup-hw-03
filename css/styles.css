@@ -25,10 +25,6 @@ text-decoration: none;
 .accent:hover, .accent:focus {
     color: var(--focus-color);
 }
-/* a, ul {
-    list-style-type: none;
-    text-decoration: none;
-} */
 /* header */
 .header {
     background-color: var(--bg-header-color);
@@ -226,3 +222,11 @@ text-decoration: none;
     justify-content:flex-end; 
     flex-direction: column-reverse;
 }
+/* .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+} */
+
