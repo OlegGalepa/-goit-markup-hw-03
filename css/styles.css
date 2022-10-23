@@ -16,13 +16,19 @@ body {
     font-size: 14px;
     background-color: var(--bg-header-color);
 }
+.list {
+list-style-type: none;
+}
+.link {
+text-decoration: none;
+}
 .accent:hover, .accent:focus {
     color: var(--focus-color);
 }
-a, ul {
+/* a, ul {
     list-style-type: none;
     text-decoration: none;
-}
+} */
 /* header */
 .header {
     background-color: var(--bg-header-color);
@@ -214,3 +220,9 @@ a, ul {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
  }
+.container ul li {
+    align-items:flex-end;
+    align-content:
+    justify-content:flex-end; 
+    flex-direction: column-reverse;
+}
