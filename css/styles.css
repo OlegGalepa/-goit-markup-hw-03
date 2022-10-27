@@ -9,6 +9,7 @@
     --title-text-color: #212121;
     --comands-color: #F5F4FA;
     --logo-studia-color: #000;
+    --border-cards-color: #EEEEEE;
 }
 /* Загальні стилі для сторінки */
 body {
@@ -40,32 +41,41 @@ h1, h2, h3, p {
 }
 
 .section {
-    /* padding-top: 94px; */
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
+}
+.header-block {
+    display: flex;
+    align-items: center;
     height: 80px;
-    outline: 2px dashed #f44336;
 }
 .header-logo {
     display: flex;
-    outline: 1px solid green;
 }
 .header-list {
-    display: flex;
-    margin-left: 95px;
-     outline: 1px dashed blue;
+    display: flex; 
+    margin-left: 93px; 
 }
 
+.header-list>.item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-communication {
     display: flex;
-    margin-left: auto;
-    outline: 1px dashed #f44336;
-    
+    margin-left: auto;   
 }
+/* Альтернативний варіант not(:last-child) */
+.header-communication>.item + .item {
+    margin-left: 50px;
+}
+/* .header-communication>.item:not(:last-child) {
+    margin-right: 50px;
+} */
 .work-title {
     padding-bottom: 50px;
 }
@@ -86,12 +96,12 @@ h1, h2, h3, p {
 }
 
 .header-logo {
+    color: var(--logo-studia-color);
     font-family: 'Raleway'; 
     line-height: 1.19;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-    color: var(--logo-studia-color);   
 }
 .web {
     color: var(--focus-color);
@@ -99,23 +109,27 @@ h1, h2, h3, p {
 
 .header-link {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
+    color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
 }
 .curent {
     color: var(--accent-color)
 }
 /* телефон та мейл */
 .header-mail, .header-tel {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--o-nas-color);
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: var(--o-nas-color);
 }
 /* Секція section-bussines */
 
@@ -133,14 +147,13 @@ h1, h2, h3, p {
     padding-left: 280px;
     padding-right: 280px;
 
+    color: var(--text-section-footer-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--text-section-footer-color);
-    outline: 1px solid white;
 }
 /* кнопка */
 .bussines-button {
@@ -159,6 +172,8 @@ h1, h2, h3, p {
 } 
 /* всі заголовки */
 .titles {
+    margin-bottom: 50px;
+
     font-weight: 700;
     height: 42px;  
     font-size: 36px;
@@ -182,6 +197,8 @@ h1, h2, h3, p {
 }
 /* секція section-features */
  .features-title {
+    margin-bottom: 10px;
+
      font-weight: 700;
      line-height: 1.14;
      letter-spacing: 0.03em;
@@ -197,8 +214,12 @@ h1, h2, h3, p {
  .commands {
      background-color: var(--comands-color);
  }
-
+.img {
+    margin-bottom: 30px;
+}
  .commands-name {
+    margin-bottom: 10px;
+
      font-weight: 500;
      font-size: 16px;
      line-height: 1.18;
@@ -207,6 +228,7 @@ h1, h2, h3, p {
      color: var(--title-text-color)
  }
  .commands-work {
+    padding-bottom: 30px;
      font-size: 16px;
      line-height: 1.18;
      text-align: center;
@@ -214,6 +236,7 @@ h1, h2, h3, p {
      color: var(--o-nas-color)
  }
 .commands-list .item {
+    width: 270px;
     background-color: var(--bg-header-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -272,15 +295,26 @@ h1, h2, h3, p {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
  /* картки в портфоліо */
+ .parent-list > .item {
+    width: 370px;
+    border: 1px solid var(--border-cards-color);
+
+ }
  .cards-name {
+margin-bottom: 4px;
+
      font-weight: 700;
      font-size: 18px;
      line-height: 2.0; 
      letter-spacing: 0.06em;
      color: var(--title-text-color);
  }
-
+.img-link {
+    margin-bottom: 20px;
+}
  .cards-paragraph {
+    padding-bottom: 20px;
+
      font-size: 16px;
      line-height: 1.88;
      letter-spacing: 0.03em;
