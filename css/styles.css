@@ -144,6 +144,8 @@ h1, h2, h3, p {
     padding-bottom: 200px;
     height: 600px;
     margin: 0 auto;
+    max-width: 1600px;
+    background-position: center;
     background: var(--bg-screan-footer-color);
 }
 
@@ -360,7 +362,13 @@ margin-top: 20px;
     
     margin-right: 30px;
     width: 370px;
-    border: 1px solid var(--border-cards-color);
+    
+    
+ }
+ .container-cards {
+border: 1px solid var(--border-cards-color);
+    border-top: none;
+    padding-top: 20px;
  }
  .parent-list>.item:nth-child(n+4) {
     margin-top: 30px;
@@ -379,9 +387,6 @@ padding-left: 24px;
      color: var(--title-text-color);
  }
 
-.img-link {
-    margin-bottom: 20px;
-}
 
  .cards-paragraph {
     padding-bottom: 20px;
