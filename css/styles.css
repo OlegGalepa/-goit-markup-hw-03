@@ -30,7 +30,7 @@ text-decoration: none;
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .accent:hover,
@@ -143,16 +143,15 @@ h1, h2, h3, p {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
-    margin: 0 auto;
     max-width: 1600px;
     background-position: center;
     background: var(--bg-screan-footer-color);
 }
 
 .bussines-title {
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
-    padding-left: 280px;
-    padding-right: 280px;
 
     color: var(--text-section-footer-color);
     font-weight: 900;
@@ -228,9 +227,6 @@ h1, h2, h3, p {
      color: var(--o-nas-color);
  }
 
-.work-title {
-    padding-bottom: 50px;
-}
 .work-list .item{
 display: flex;
 }
@@ -242,11 +238,11 @@ display: flex;
  .commands {
      background-color: var(--comands-color);
  }
-
+.container-commands-cart {
+    padding: 30px 10px;
+}
  .commands-name {
-    margin-top: 30px;
     margin-bottom: 10px;
-
      font-weight: 500;
      font-size: 16px;
      line-height: 1.18;
@@ -256,7 +252,6 @@ display: flex;
  }
 
  .commands-work {
-    padding-bottom: 30px;
      font-size: 16px;
      line-height: 1.18;
      text-align: center;
@@ -279,11 +274,8 @@ display: flex;
  .footer {
     height: 252px;
     background: var(--bg-screan-footer-color);
- }
-
- .ft-container {
     padding-top: 60px;
-    padding-bottom: 60px;
+        padding-bottom: 60px;
  }
 
 .footer-logo {
@@ -361,25 +353,25 @@ margin-top: 20px;
  .parent-list > .item {
     
     margin-right: 30px;
-    width: 370px;
+    width: calc((100% - 60px)/3);
+    /* width: 370px; */
     
     
  }
  .container-cards {
-border: 1px solid var(--border-cards-color);
+    border: 1px solid var(--border-cards-color);
     border-top: none;
-    padding-top: 20px;
+    padding: 20px 24px;
  }
  .parent-list>.item:nth-child(n+4) {
     margin-top: 30px;
  }
  .parent-list .item:nth-child(3n){
-    margin-right: 0;
+     margin-right: 0;
  }
 
  .cards-name {
-margin-bottom: 4px;
-padding-left: 24px;
+     margin-bottom: 4px;
      font-weight: 700;
      font-size: 18px;
      line-height: 2.0; 
@@ -387,11 +379,7 @@ padding-left: 24px;
      color: var(--title-text-color);
  }
 
-
  .cards-paragraph {
-    padding-bottom: 20px;
-    padding-left: 24px;
-
      font-size: 16px;
      line-height: 1.88;
      letter-spacing: 0.03em;
